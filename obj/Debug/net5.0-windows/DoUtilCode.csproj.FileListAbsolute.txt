@@ -1,0 +1,52 @@
+E:\Projetos Uteis\DoUtilCode\bin\Debug\net5.0-windows\DoUtilCode.exe
+E:\Projetos Uteis\DoUtilCode\bin\Debug\net5.0-windows\DoUtilCode.deps.json
+E:\Projetos Uteis\DoUtilCode\bin\Debug\net5.0-windows\DoUtilCode.runtimeconfig.json
+E:\Projetos Uteis\DoUtilCode\bin\Debug\net5.0-windows\DoUtilCode.runtimeconfig.dev.json
+E:\Projetos Uteis\DoUtilCode\bin\Debug\net5.0-windows\DoUtilCode.dll
+E:\Projetos Uteis\DoUtilCode\bin\Debug\net5.0-windows\ref\DoUtilCode.dll
+E:\Projetos Uteis\DoUtilCode\bin\Debug\net5.0-windows\DoUtilCode.pdb
+E:\Projetos Uteis\DoUtilCode\obj\Debug\net5.0-windows\DoUtilCode.csproj.AssemblyReference.cache
+E:\Projetos Uteis\DoUtilCode\obj\Debug\net5.0-windows\DoUtilCode.Form1.resources
+E:\Projetos Uteis\DoUtilCode\obj\Debug\net5.0-windows\DoUtilCode.csproj.GenerateResource.cache
+E:\Projetos Uteis\DoUtilCode\obj\Debug\net5.0-windows\DoUtilCode.GeneratedMSBuildEditorConfig.editorconfig
+E:\Projetos Uteis\DoUtilCode\obj\Debug\net5.0-windows\DoUtilCode.AssemblyInfoInputs.cache
+E:\Projetos Uteis\DoUtilCode\obj\Debug\net5.0-windows\DoUtilCode.AssemblyInfo.cs
+E:\Projetos Uteis\DoUtilCode\obj\Debug\net5.0-windows\DoUtilCode.csproj.CoreCompileInputs.cache
+E:\Projetos Uteis\DoUtilCode\obj\Debug\net5.0-windows\DoUtilCode.dll
+E:\Projetos Uteis\DoUtilCode\obj\Debug\net5.0-windows\ref\DoUtilCode.dll
+E:\Projetos Uteis\DoUtilCode\obj\Debug\net5.0-windows\DoUtilCode.pdb
+E:\Projetos Uteis\DoUtilCode\obj\Debug\net5.0-windows\DoUtilCode.genruntimeconfig.cache
+E:\Projetos Uteis\DoUtilCode\bin\Debug\net5.0-windows\System.Data.SqlClient.dll
+E:\Projetos Uteis\DoUtilCode\bin\Debug\net5.0-windows\runtimes\win-arm64\native\sni.dll
+E:\Projetos Uteis\DoUtilCode\bin\Debug\net5.0-windows\runtimes\win-x64\native\sni.dll
+E:\Projetos Uteis\DoUtilCode\bin\Debug\net5.0-windows\runtimes\win-x86\native\sni.dll
+E:\Projetos Uteis\DoUtilCode\bin\Debug\net5.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+E:\Projetos Uteis\DoUtilCode\bin\Debug\net5.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+E:\Projetos Uteis\DoUtilCode\obj\Debug\net5.0-windows\DoUtilCode.Result.resources
+E:\Projetos Uteis\DoUtilCode\obj\Debug\net5.0-windows\DoUtilCode.csproj.CopyComplete
+E:\Adonai Workspace\AdonaiSoft Sistemas\AdonaiSoft Uteis\AdonaiUtil\bin\Debug\net5.0-windows\DoUtilCode.exe
+E:\Adonai Workspace\AdonaiSoft Sistemas\AdonaiSoft Uteis\AdonaiUtil\bin\Debug\net5.0-windows\DoUtilCode.deps.json
+E:\Adonai Workspace\AdonaiSoft Sistemas\AdonaiSoft Uteis\AdonaiUtil\bin\Debug\net5.0-windows\DoUtilCode.runtimeconfig.json
+E:\Adonai Workspace\AdonaiSoft Sistemas\AdonaiSoft Uteis\AdonaiUtil\bin\Debug\net5.0-windows\DoUtilCode.runtimeconfig.dev.json
+E:\Adonai Workspace\AdonaiSoft Sistemas\AdonaiSoft Uteis\AdonaiUtil\bin\Debug\net5.0-windows\DoUtilCode.dll
+E:\Adonai Workspace\AdonaiSoft Sistemas\AdonaiSoft Uteis\AdonaiUtil\bin\Debug\net5.0-windows\ref\DoUtilCode.dll
+E:\Adonai Workspace\AdonaiSoft Sistemas\AdonaiSoft Uteis\AdonaiUtil\bin\Debug\net5.0-windows\DoUtilCode.pdb
+E:\Adonai Workspace\AdonaiSoft Sistemas\AdonaiSoft Uteis\AdonaiUtil\bin\Debug\net5.0-windows\System.Data.SqlClient.dll
+E:\Adonai Workspace\AdonaiSoft Sistemas\AdonaiSoft Uteis\AdonaiUtil\bin\Debug\net5.0-windows\runtimes\win-arm64\native\sni.dll
+E:\Adonai Workspace\AdonaiSoft Sistemas\AdonaiSoft Uteis\AdonaiUtil\bin\Debug\net5.0-windows\runtimes\win-x64\native\sni.dll
+E:\Adonai Workspace\AdonaiSoft Sistemas\AdonaiSoft Uteis\AdonaiUtil\bin\Debug\net5.0-windows\runtimes\win-x86\native\sni.dll
+E:\Adonai Workspace\AdonaiSoft Sistemas\AdonaiSoft Uteis\AdonaiUtil\bin\Debug\net5.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+E:\Adonai Workspace\AdonaiSoft Sistemas\AdonaiSoft Uteis\AdonaiUtil\bin\Debug\net5.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+E:\Adonai Workspace\AdonaiSoft Sistemas\AdonaiSoft Uteis\AdonaiUtil\obj\Debug\net5.0-windows\DoUtilCode.csproj.AssemblyReference.cache
+E:\Adonai Workspace\AdonaiSoft Sistemas\AdonaiSoft Uteis\AdonaiUtil\obj\Debug\net5.0-windows\DoUtilCode.Form1.resources
+E:\Adonai Workspace\AdonaiSoft Sistemas\AdonaiSoft Uteis\AdonaiUtil\obj\Debug\net5.0-windows\DoUtilCode.Result.resources
+E:\Adonai Workspace\AdonaiSoft Sistemas\AdonaiSoft Uteis\AdonaiUtil\obj\Debug\net5.0-windows\DoUtilCode.csproj.GenerateResource.cache
+E:\Adonai Workspace\AdonaiSoft Sistemas\AdonaiSoft Uteis\AdonaiUtil\obj\Debug\net5.0-windows\DoUtilCode.GeneratedMSBuildEditorConfig.editorconfig
+E:\Adonai Workspace\AdonaiSoft Sistemas\AdonaiSoft Uteis\AdonaiUtil\obj\Debug\net5.0-windows\DoUtilCode.AssemblyInfoInputs.cache
+E:\Adonai Workspace\AdonaiSoft Sistemas\AdonaiSoft Uteis\AdonaiUtil\obj\Debug\net5.0-windows\DoUtilCode.AssemblyInfo.cs
+E:\Adonai Workspace\AdonaiSoft Sistemas\AdonaiSoft Uteis\AdonaiUtil\obj\Debug\net5.0-windows\DoUtilCode.csproj.CoreCompileInputs.cache
+E:\Adonai Workspace\AdonaiSoft Sistemas\AdonaiSoft Uteis\AdonaiUtil\obj\Debug\net5.0-windows\DoUtilCode.csproj.CopyComplete
+E:\Adonai Workspace\AdonaiSoft Sistemas\AdonaiSoft Uteis\AdonaiUtil\obj\Debug\net5.0-windows\DoUtilCode.dll
+E:\Adonai Workspace\AdonaiSoft Sistemas\AdonaiSoft Uteis\AdonaiUtil\obj\Debug\net5.0-windows\ref\DoUtilCode.dll
+E:\Adonai Workspace\AdonaiSoft Sistemas\AdonaiSoft Uteis\AdonaiUtil\obj\Debug\net5.0-windows\DoUtilCode.pdb
+E:\Adonai Workspace\AdonaiSoft Sistemas\AdonaiSoft Uteis\AdonaiUtil\obj\Debug\net5.0-windows\DoUtilCode.genruntimeconfig.cache
