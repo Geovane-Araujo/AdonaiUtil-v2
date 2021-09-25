@@ -18,7 +18,7 @@ namespace AdonaiUtil.Utils
         public string HostInstancia { get; set; }
         public string NomeBanco { get; set; }
         public string Senha { get; set; }
-        public bool Usuario { get; set; }
+        public String Usuario { get; set; }
 
 
 

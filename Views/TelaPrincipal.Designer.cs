@@ -31,6 +31,11 @@ namespace DoUtilCode
         {
             this.principal = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.che_geracabecalho = new System.Windows.Forms.CheckBox();
+            this.che_token = new System.Windows.Forms.CheckBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.che_resource = new System.Windows.Forms.CheckBox();
             this.label11 = new System.Windows.Forms.Label();
             this.cb_linguagem = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -45,13 +50,13 @@ namespace DoUtilCode
             this.txt_class = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.txt_tables = new System.Windows.Forms.TextBox();
-            this.che_saveData = new System.Windows.Forms.CheckBox();
-            this.che_getdata = new System.Windows.Forms.CheckBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txt_routeApi = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.label14 = new System.Windows.Forms.Label();
+            this.txt_usuario = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.cb_banco = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
@@ -60,15 +65,14 @@ namespace DoUtilCode
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.txt_dbName = new System.Windows.Forms.TextBox();
-            this.che_resource = new System.Windows.Forms.CheckBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.che_token = new System.Windows.Forms.CheckBox();
-            this.che_geracabecalho = new System.Windows.Forms.CheckBox();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
             this.principal.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage3.SuspendLayout();
+            this.tabPage4.SuspendLayout();
             this.SuspendLayout();
             // 
             // principal
@@ -79,6 +83,7 @@ namespace DoUtilCode
             this.principal.Controls.Add(this.tabPage1);
             this.principal.Controls.Add(this.tabPage2);
             this.principal.Controls.Add(this.tabPage3);
+            this.principal.Controls.Add(this.tabPage4);
             this.principal.Location = new System.Drawing.Point(3, 0);
             this.principal.Name = "principal";
             this.principal.SelectedIndex = 0;
@@ -91,7 +96,6 @@ namespace DoUtilCode
             this.tabPage1.Controls.Add(this.che_token);
             this.tabPage1.Controls.Add(this.label13);
             this.tabPage1.Controls.Add(this.label12);
-            this.tabPage1.Controls.Add(this.label4);
             this.tabPage1.Controls.Add(this.che_resource);
             this.tabPage1.Controls.Add(this.label11);
             this.tabPage1.Controls.Add(this.cb_linguagem);
@@ -107,8 +111,6 @@ namespace DoUtilCode
             this.tabPage1.Controls.Add(this.txt_class);
             this.tabPage1.Controls.Add(this.label5);
             this.tabPage1.Controls.Add(this.txt_tables);
-            this.tabPage1.Controls.Add(this.che_saveData);
-            this.tabPage1.Controls.Add(this.che_getdata);
             this.tabPage1.Controls.Add(this.label3);
             this.tabPage1.Controls.Add(this.txt_routeApi);
             this.tabPage1.Controls.Add(this.button1);
@@ -119,6 +121,60 @@ namespace DoUtilCode
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Gerador de Código";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // che_geracabecalho
+            // 
+            this.che_geracabecalho.AutoSize = true;
+            this.che_geracabecalho.Checked = true;
+            this.che_geracabecalho.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.che_geracabecalho.Location = new System.Drawing.Point(544, 368);
+            this.che_geracabecalho.Name = "che_geracabecalho";
+            this.che_geracabecalho.Size = new System.Drawing.Size(161, 19);
+            this.che_geracabecalho.TabIndex = 71;
+            this.che_geracabecalho.Text = "Gera Cabeçalho da Classe";
+            this.che_geracabecalho.UseVisualStyleBackColor = true;
+            // 
+            // che_token
+            // 
+            this.che_token.AutoSize = true;
+            this.che_token.Checked = true;
+            this.che_token.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.che_token.Location = new System.Drawing.Point(544, 326);
+            this.che_token.Name = "che_token";
+            this.che_token.Size = new System.Drawing.Size(79, 19);
+            this.che_token.TabIndex = 70;
+            this.che_token.Text = "Usa Token";
+            this.che_token.UseVisualStyleBackColor = true;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(544, 221);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(43, 15);
+            this.label13.TabIndex = 69;
+            this.label13.Text = "Outros";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(13, 221);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(54, 15);
+            this.label12.TabIndex = 68;
+            this.label12.Text = "Recursos";
+            // 
+            // che_resource
+            // 
+            this.che_resource.AutoSize = true;
+            this.che_resource.Checked = true;
+            this.che_resource.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.che_resource.Location = new System.Drawing.Point(13, 323);
+            this.che_resource.Name = "che_resource";
+            this.che_resource.Size = new System.Drawing.Size(74, 19);
+            this.che_resource.TabIndex = 66;
+            this.che_resource.Text = "Resource";
+            this.che_resource.UseVisualStyleBackColor = true;
             // 
             // label11
             // 
@@ -160,7 +216,7 @@ namespace DoUtilCode
             this.txt_Connections.Name = "txt_Connections";
             this.txt_Connections.Size = new System.Drawing.Size(334, 23);
             this.txt_Connections.TabIndex = 62;
-            this.txt_Connections.Text = "DOConn";
+            this.txt_Connections.Text = "AdonaiConnections";
             // 
             // label8
             // 
@@ -177,16 +233,17 @@ namespace DoUtilCode
             this.txt_namespace.Name = "txt_namespace";
             this.txt_namespace.Size = new System.Drawing.Size(334, 23);
             this.txt_namespace.TabIndex = 52;
-            this.txt_namespace.Text = "doAPI.Controllers";
             // 
             // che_atom
             // 
             this.che_atom.AutoSize = true;
+            this.che_atom.Checked = true;
+            this.che_atom.CheckState = System.Windows.Forms.CheckState.Checked;
             this.che_atom.Location = new System.Drawing.Point(544, 287);
             this.che_atom.Name = "che_atom";
-            this.che_atom.Size = new System.Drawing.Size(188, 19);
+            this.che_atom.Size = new System.Drawing.Size(118, 19);
             this.che_atom.TabIndex = 49;
-            this.che_atom.Text = "Atom Framework(By Geovane)";
+            this.che_atom.Text = "Atom Framework";
             this.che_atom.UseVisualStyleBackColor = true;
             // 
             // che_normal
@@ -204,7 +261,7 @@ namespace DoUtilCode
             this.che_controller.AutoSize = true;
             this.che_controller.Checked = true;
             this.che_controller.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.che_controller.Location = new System.Drawing.Point(8, 404);
+            this.che_controller.Location = new System.Drawing.Point(13, 286);
             this.che_controller.Name = "che_controller";
             this.che_controller.Size = new System.Drawing.Size(79, 19);
             this.che_controller.TabIndex = 47;
@@ -216,7 +273,7 @@ namespace DoUtilCode
             this.che_model.AutoSize = true;
             this.che_model.Checked = true;
             this.che_model.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.che_model.Location = new System.Drawing.Point(8, 368);
+            this.che_model.Location = new System.Drawing.Point(13, 250);
             this.che_model.Name = "che_model";
             this.che_model.Size = new System.Drawing.Size(60, 19);
             this.che_model.TabIndex = 46;
@@ -238,7 +295,7 @@ namespace DoUtilCode
             this.txt_class.Name = "txt_class";
             this.txt_class.Size = new System.Drawing.Size(336, 23);
             this.txt_class.TabIndex = 44;
-            this.txt_class.Text = "NFeCobrancaDuplicatasCentroCusto";
+            this.txt_class.Text = "Pessoa";
             // 
             // label5
             // 
@@ -255,31 +312,7 @@ namespace DoUtilCode
             this.txt_tables.Name = "txt_tables";
             this.txt_tables.Size = new System.Drawing.Size(336, 23);
             this.txt_tables.TabIndex = 42;
-            this.txt_tables.Text = "NFe_cobranca_duplicatas_centroCusto";
-            // 
-            // che_saveData
-            // 
-            this.che_saveData.AutoSize = true;
-            this.che_saveData.Checked = true;
-            this.che_saveData.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.che_saveData.Location = new System.Drawing.Point(8, 285);
-            this.che_saveData.Name = "che_saveData";
-            this.che_saveData.Size = new System.Drawing.Size(50, 19);
-            this.che_saveData.TabIndex = 37;
-            this.che_saveData.Text = "Save";
-            this.che_saveData.UseVisualStyleBackColor = true;
-            // 
-            // che_getdata
-            // 
-            this.che_getdata.AutoSize = true;
-            this.che_getdata.Checked = true;
-            this.che_getdata.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.che_getdata.Location = new System.Drawing.Point(8, 251);
-            this.che_getdata.Name = "che_getdata";
-            this.che_getdata.Size = new System.Drawing.Size(67, 19);
-            this.che_getdata.TabIndex = 36;
-            this.che_getdata.Text = "GetById";
-            this.che_getdata.UseVisualStyleBackColor = true;
+            this.txt_tables.Text = "pessoa";
             // 
             // label3
             // 
@@ -296,6 +329,7 @@ namespace DoUtilCode
             this.txt_routeApi.Name = "txt_routeApi";
             this.txt_routeApi.Size = new System.Drawing.Size(334, 23);
             this.txt_routeApi.TabIndex = 33;
+            this.txt_routeApi.Text = "adonai";
             // 
             // button1
             // 
@@ -305,6 +339,7 @@ namespace DoUtilCode
             this.button1.TabIndex = 28;
             this.button1.Text = "Gerar";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // tabPage2
             // 
@@ -318,6 +353,8 @@ namespace DoUtilCode
             // 
             // tabPage3
             // 
+            this.tabPage3.Controls.Add(this.label14);
+            this.tabPage3.Controls.Add(this.txt_usuario);
             this.tabPage3.Controls.Add(this.label10);
             this.tabPage3.Controls.Add(this.cb_banco);
             this.tabPage3.Controls.Add(this.label9);
@@ -333,6 +370,24 @@ namespace DoUtilCode
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Conexão";
             this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(3, 74);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(47, 15);
+            this.label14.TabIndex = 69;
+            this.label14.Text = "Usuário";
+            // 
+            // txt_usuario
+            // 
+            this.txt_usuario.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txt_usuario.Location = new System.Drawing.Point(3, 92);
+            this.txt_usuario.Name = "txt_usuario";
+            this.txt_usuario.Size = new System.Drawing.Size(334, 23);
+            this.txt_usuario.TabIndex = 68;
+            this.txt_usuario.Text = "postgres";
             // 
             // label10
             // 
@@ -371,15 +426,15 @@ namespace DoUtilCode
             this.txt_senha.Name = "txt_senha";
             this.txt_senha.Size = new System.Drawing.Size(343, 23);
             this.txt_senha.TabIndex = 62;
-            this.txt_senha.Text = "Atmus@#4080";
+            this.txt_senha.Text = "1816";
             // 
             // txt_instance
             // 
-            this.txt_instance.Location = new System.Drawing.Point(3, 92);
+            this.txt_instance.Location = new System.Drawing.Point(390, 37);
             this.txt_instance.Name = "txt_instance";
-            this.txt_instance.Size = new System.Drawing.Size(334, 23);
+            this.txt_instance.Size = new System.Drawing.Size(343, 23);
             this.txt_instance.TabIndex = 56;
-            this.txt_instance.Text = "PROGRAMADORDATA\\SQLEXPRESS2019";
+            this.txt_instance.Text = "localhost";
             // 
             // label2
             // 
@@ -393,7 +448,7 @@ namespace DoUtilCode
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(3, 74);
+            this.label1.Location = new System.Drawing.Point(390, 19);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(84, 15);
             this.label1.TabIndex = 57;
@@ -406,70 +461,50 @@ namespace DoUtilCode
             this.txt_dbName.Name = "txt_dbName";
             this.txt_dbName.Size = new System.Drawing.Size(334, 23);
             this.txt_dbName.TabIndex = 58;
-            this.txt_dbName.Text = "atmusinf_Control-3310";
+            this.txt_dbName.Text = "adonai";
             // 
-            // che_resource
+            // tabPage4
             // 
-            this.che_resource.AutoSize = true;
-            this.che_resource.Checked = true;
-            this.che_resource.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.che_resource.Location = new System.Drawing.Point(8, 441);
-            this.che_resource.Name = "che_resource";
-            this.che_resource.Size = new System.Drawing.Size(74, 19);
-            this.che_resource.TabIndex = 66;
-            this.che_resource.Text = "Resource";
-            this.che_resource.UseVisualStyleBackColor = true;
+            this.tabPage4.Controls.Add(this.button4);
+            this.tabPage4.Controls.Add(this.button3);
+            this.tabPage4.Controls.Add(this.button2);
+            this.tabPage4.Location = new System.Drawing.Point(4, 24);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage4.Size = new System.Drawing.Size(739, 499);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "Uteis";
+            this.tabPage4.UseVisualStyleBackColor = true;
             // 
-            // label4
+            // button2
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(8, 221);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(54, 15);
-            this.label4.TabIndex = 67;
-            this.label4.Text = "Métodos";
+            this.button2.Location = new System.Drawing.Point(6, 30);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(141, 23);
+            this.button2.TabIndex = 29;
+            this.button2.Text = "PyAtom";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // label12
+            // button3
             // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(8, 339);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(54, 15);
-            this.label12.TabIndex = 68;
-            this.label12.Text = "Recursos";
+            this.button3.Location = new System.Drawing.Point(6, 59);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(141, 23);
+            this.button3.TabIndex = 30;
+            this.button3.Text = "Java Token Function";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
-            // label13
+            // button4
             // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(544, 221);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(43, 15);
-            this.label13.TabIndex = 69;
-            this.label13.Text = "Outros";
-            // 
-            // che_token
-            // 
-            this.che_token.AutoSize = true;
-            this.che_token.Checked = true;
-            this.che_token.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.che_token.Location = new System.Drawing.Point(544, 326);
-            this.che_token.Name = "che_token";
-            this.che_token.Size = new System.Drawing.Size(79, 19);
-            this.che_token.TabIndex = 70;
-            this.che_token.Text = "Usa Token";
-            this.che_token.UseVisualStyleBackColor = true;
-            // 
-            // che_geracabecalho
-            // 
-            this.che_geracabecalho.AutoSize = true;
-            this.che_geracabecalho.Checked = true;
-            this.che_geracabecalho.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.che_geracabecalho.Location = new System.Drawing.Point(544, 368);
-            this.che_geracabecalho.Name = "che_geracabecalho";
-            this.che_geracabecalho.Size = new System.Drawing.Size(161, 19);
-            this.che_geracabecalho.TabIndex = 71;
-            this.che_geracabecalho.Text = "Gera Cabeçalho da Classe";
-            this.che_geracabecalho.UseVisualStyleBackColor = true;
+            this.button4.Location = new System.Drawing.Point(6, 88);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(141, 23);
+            this.button4.TabIndex = 31;
+            this.button4.Text = "Classe de Conexão Java";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // TelaPrincipal
             // 
@@ -486,6 +521,7 @@ namespace DoUtilCode
             this.tabPage1.PerformLayout();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
+            this.tabPage4.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -504,8 +540,6 @@ namespace DoUtilCode
         private System.Windows.Forms.TextBox txt_class;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txt_tables;
-        private System.Windows.Forms.CheckBox che_saveData;
-        private System.Windows.Forms.CheckBox che_getdata;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txt_routeApi;
         private System.Windows.Forms.Button button1;
@@ -526,9 +560,14 @@ namespace DoUtilCode
         private System.Windows.Forms.CheckBox che_token;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.CheckBox che_resource;
         private System.Windows.Forms.CheckBox che_geracabecalho;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.TextBox txt_usuario;
+        private System.Windows.Forms.TabPage tabPage4;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button3;
     }
 }
 

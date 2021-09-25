@@ -12,6 +12,31 @@ namespace AdonaiUtil.Controllers
     class CSharpController : UtilModels
     {
 
+        public CSharpController(UtilModels obj)
+        {
+            this.atributes = obj.atributes;
+            TipoBanco = obj.TipoBanco;
+            HostInstancia = obj.HostInstancia;
+            NomeBanco = obj.NomeBanco;
+            Senha = obj.Senha;
+            Usuario = obj.Usuario;
+            ClasseConexao = obj.ClasseConexao;
+            RotaApi = obj.RotaApi;
+            NameSpace = obj.NameSpace;
+            Linguagem = obj.Linguagem;
+            Tabela = obj.Tabela;
+            NomeClasse = obj.NomeClasse;
+            GeraGetById = obj.GeraGetById;
+            GeraSave = obj.GeraSave;
+            Model = obj.Model;
+            Controller = obj.Controller;
+            Resource = obj.Resource;
+            MetodoManual = obj.MetodoManual;
+            UsaFramework = obj.UsaFramework;
+            UsaToken = obj.UsaToken;
+            GeraCabecalho = obj.GeraCabecalho;
+        }
+
         public void InitOperation()
         {
             if (Model)
@@ -110,5 +135,7 @@ namespace AdonaiUtil.Controllers
 
             return sql;
         }
+
+
     }
 }

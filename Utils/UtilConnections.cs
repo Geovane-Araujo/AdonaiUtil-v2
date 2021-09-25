@@ -12,14 +12,14 @@ using System.Windows.Forms;
 
 namespace DoUtilCode
 {
-    class UtilConnections : UtilModels
+    class UtilConnections
     {
         
-        public IDbConnection NewInstance(String Instance,String db, String senha)
+        public IDbConnection NewInstance(UtilModels obj)
         {
-            if (TipoBanco == 0)
+            if (obj.TipoBanco == 0)
             {
-                NpgsqlConnection con = new NpgsqlConnection("Host=" + HostInstancia + ";Username=" + Usuario + ";Password=" + Senha+ ";Database=" + NomeBanco);
+                NpgsqlConnection con = new NpgsqlConnection("Host=" + obj.HostInstancia + ";Username=" + obj.Usuario + ";Password=" + obj.Senha + ";Database=" + obj.NomeBanco);
 
                 try
                 {
@@ -31,9 +31,9 @@ namespace DoUtilCode
                 }
                 return con;
             }
-            if (TipoBanco == 1)
+            if (obj.TipoBanco == 1)
             {
-                SqlConnection cnn = new SqlConnection("Data Source=" + Instance + ";Initial Catalog=" + db + ";User=sa;Password=" + senha);
+                SqlConnection cnn = new SqlConnection("Data Source=" + obj.HostInstancia + ";Initial Catalog=" + obj.NomeBanco + ";User=sa;Password=" + obj.Senha);
 
                 try
                 {
@@ -45,9 +45,9 @@ namespace DoUtilCode
                 }
                 return cnn;
             }
-            if (TipoBanco == 2)
+            if (obj.TipoBanco == 2)
             {
-                MySqlConnection con = new MySqlConnection("Server=" + HostInstancia + ";Database=" + NomeBanco + ";Uid=" + Usuario + ";Pwd=" + Senha);
+                MySqlConnection con = new MySqlConnection("Server=" + obj.HostInstancia + ";Database=" + obj.NomeBanco + ";Uid=" + obj.Usuario + ";Pwd=" + obj.Senha);
 
                 try
                 {
@@ -66,13 +66,13 @@ namespace DoUtilCode
             
         }
 
-        public void AddAtributes()
+        public UtilModels AddAtributes(UtilModels obj)
         {
-            IDbConnection con = NewInstance(HostInstancia, NomeBanco, Senha);
+            IDbConnection con = NewInstance(obj);
             IDbCommand command = null;
             IDataReader dr = null;
 
-            String sql = "SELECT column_name as tabela, data_type as tipo FROM information_schema.columns WHERE table_name = '" + Tabela + "' and COLUMN_NAME <> 'Guid'";
+            String sql = "SELECT column_name as tabela, data_type as tipo FROM information_schema.columns WHERE table_name = '" + obj.Tabela + "' and COLUMN_NAME <> 'Guid'";
 
             command = con.CreateCommand();
             command.CommandText = sql;
@@ -85,9 +85,9 @@ namespace DoUtilCode
                 String name = dr.GetString(dr.GetOrdinal("tabela"));
                 String tipo = "";
 
-                if (type.Equals("int") || type.Equals("smallint"))
+                if (type.Equals("int") || type.Equals("smallint") || type.Equals("integer"))
                 {
-                    if(Linguagem == 0)
+                    if(obj.Linguagem == 0)
                     {
                         tipo = "int";
                     }
@@ -101,13 +101,13 @@ namespace DoUtilCode
                 {
                     tipo = "String";
                 }
-                else if (type.Equals("character varying"))
+                else if (type.Equals("character varying") || type.Equals("longtext"))
                 {
                     tipo = "String";
                 }
                 else if (type.Equals("datetime"))
                 {
-                    if (Linguagem == 0)
+                    if (obj.Linguagem == 0)
                     {
                         tipo = "TImeStamp";
                     }
@@ -116,6 +116,18 @@ namespace DoUtilCode
                         tipo = "DateTime";
                     }
                     
+                }
+                else if (type.Equals("date"))
+                {
+                    if (obj.Linguagem == 0)
+                    {
+                        tipo = "Date";
+                    }
+                    else
+                    {
+                        tipo = "DateTime";
+                    }
+
                 }
                 else if (type.Equals("tinyint"))
                 {
@@ -138,10 +150,12 @@ namespace DoUtilCode
                     type = "PADRÂO NÂO ENCONTRADO";
                 }
 
-                atributes.Add(name, tipo);
+                obj.atributes.Add(name, tipo);
             }
             command.Dispose();
             dr.Close();
+
+            return obj;
 
         }
     }
