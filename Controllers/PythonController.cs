@@ -57,7 +57,12 @@ namespace AdonaiUtil.Controllers
                             "            self.edit = obj.get(\"edit\")\n" +
                             "            self.dele = obj.get(\"del\")\n";
 
-            propriedadesElse = propriedades;
+            propriedadesElse =  "            self.add = True\n" +
+                                "            self.edit = False\n" +
+                                "            self.dele = False\n";
+
+            String toJson = "    def toJson(self):\n" +
+                            "        return self.__dict__\n";
 
             foreach (DictionaryEntry en in atributes)
             {
@@ -67,7 +72,8 @@ namespace AdonaiUtil.Controllers
 
             if (GeraCabecalho)
             {
-                code = "class User():\n" +
+                code =  "import json\n\n" +
+                        "class "+NomeClasse+"():\n" +
                         "    def __init__(self,obj):\n" +
                         "        if obj != '':\n" + propriedades +
                         "        else:\n" + propriedadesElse;
@@ -76,6 +82,7 @@ namespace AdonaiUtil.Controllers
             {
                 code = propriedades;
             }
+            code += toJson;
 
             Result rs = new(code);
             rs.Show();
