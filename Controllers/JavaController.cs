@@ -117,8 +117,8 @@ namespace AdonaiUtil.Controllers
                         "import java.io.Serializable;\n" +
                         "\n" +
                         "\n" +
-                        "@TableName(value = \"pessoa\")\n" +
-                        "public class Pessoa implements Serializable {\n" +
+                        "@TableName(value = \""+Tabela+"\")\n" +
+                        "public class "+NomeClasse+" implements Serializable {\n" +
                         "    \n" +
                         "    \n" + propriedades +
                         "}\n";
@@ -139,8 +139,6 @@ namespace AdonaiUtil.Controllers
 
             propriedades =  "\n" +
                             "    String sql =\"\" ;\n" +
-                            "    String descricao = \"Cadastro.Pessoa\";\n" +
-                            "    String log =\"\" ;\n" +
                             "\n" +
                             "\n" +
                             "    public "+NomeClasse+" save(" + NomeClasse + " obj, Connection con) throws SQLException, IllegalAccessException {\n" +
@@ -191,7 +189,7 @@ namespace AdonaiUtil.Controllers
                             " */\n" +
                             "\n" +
                             "@RestController\n" +
-                            "public class PessoaController {\n" +
+                            "public class "+NomeClasse+"Controller {\n" +
                             "    \n" +
                             "    \n" + propriedades + "\n"+
                             "}";
